@@ -6,7 +6,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Calendar, Clock, Heart, ChevronDown, Send } from 'lucide-react';
-import backgroundImage from './background.jpg';
+import backgroundDesktop from './background desktop.jpg';
+import backgroundMobile from './background mobile.jpg';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,20 +52,23 @@ export default function App() {
     }
   };
 
-  const bgImageUrl = backgroundImage;
-
   return (
     <div className="relative min-h-screen overflow-hidden bg-zinc-900">
-      {/* Fixed Background Image */}
-      <div 
-        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: `url('${bgImageUrl}')`,
+      {/* Fixed Background Image — mobile below md, desktop from md up */}
+      <div
+        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat md:hidden"
+        style={{
+          backgroundImage: `url('${backgroundMobile}')`,
         }}
-      >
-        {/* Dark overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-black/30" />
-      </div>
+      />
+      <div
+        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat hidden md:block"
+        style={{
+          backgroundImage: `url('${backgroundDesktop}')`,
+        }}
+      />
+      {/* Dark overlay to ensure text readability */}
+      <div className="fixed inset-0 z-0 bg-black/30" />
 
       {/* Main Content Container */}
       <div className="relative z-10 flex flex-col items-center">
