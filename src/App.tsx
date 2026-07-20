@@ -158,7 +158,7 @@ export default function App() {
                 <Calendar className="w-8 h-8 text-white/80" />
               </div>
               <h2 className="font-serif text-4xl mb-2">Date</h2>
-              <p className="text-white/70 tracking-widest text-sm uppercase mb-8">Saturday</p>
+              <p className="text-white/70 tracking-widest text-sm uppercase mb-8">Thursday</p>
               
               <h3 className="text-xl font-medium mb-2">September 24, 2026</h3>
               <p className="text-white/80 font-light leading-relaxed mb-6">
