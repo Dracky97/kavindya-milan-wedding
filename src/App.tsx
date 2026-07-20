@@ -182,7 +182,7 @@ export default function App() {
               
               <h3 className="text-xl font-medium mb-2">11:00 AM - 04:00PM</h3>
               <p className="text-white/80 font-light leading-relaxed mb-6">
-                10:00 PM - Poruwa<br />
+                10:05 AM - Poruwa<br />
               </p>
             </motion.div>
 
