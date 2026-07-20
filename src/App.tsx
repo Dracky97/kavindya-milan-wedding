@@ -204,7 +204,7 @@ export default function App() {
                 Matara<br />
               </p>
               
-              <a href="#" className="glass-button px-6 py-3 text-sm tracking-wider uppercase mt-auto">
+              <a href="https://maps.app.goo.gl/F4jP8ZPHYVSnUt9A7" className="glass-button px-6 py-3 text-sm tracking-wider uppercase mt-auto">
                 View Map
               </a>
             </motion.div>
